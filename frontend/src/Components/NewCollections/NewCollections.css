@@ -25,6 +25,7 @@
     grid-template-columns: repeat(4, 1fr); /* Ensure there are 4 columns */
     gap: 10px; /* Adjust the gap between items here */
     margin-top: 50px;
+   
 }
 
 .item {
@@ -37,6 +38,7 @@
     height: auto;
     object-fit: cover;
     border-radius: 5px;
+    
 }
 
 
