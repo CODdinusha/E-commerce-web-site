@@ -2,10 +2,10 @@ import React from 'react'
 import './item.css'
 import { Link } from 'react-router-dom'
 
-const item = (props) => {
+const Item = (props) => {
   return (
     <div className='item'>
-        <Link to={'./product/${props.id}'}><img src={props.image} alt="" /></Link>
+        <Link to={`./product/${props.id}`}><img src={props.image} alt="" /></Link>
         <p>{props.name}</p>
         <div className="item-price-new">
             ${props.new_price}
@@ -18,4 +18,4 @@ const item = (props) => {
   )
 }
 
-export default item
+export default Item
