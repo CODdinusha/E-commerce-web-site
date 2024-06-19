@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './Navbar.css'
-
+import { ShopContext } from '../../Context/ShopContext'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const { cartItems } = useContext(ShopContext);
+  const { cartItems } = useContext(ShopContext
+
+  );
 
     const [menu,setMenu] = useState("shop");
     const cartItemCount = Object.values(cartItems).reduce((acc, cur) => acc + cur, 0);
